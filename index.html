@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Fixtures, results, league tables and news for the Howden & District Pool League.">
+  <title>Howden & District Pool League</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="#home" aria-label="Howden and District Pool League home">
+        <span class="brand-mark" aria-hidden="true">8</span>
+        <span><strong>HOWDEN & DISTRICT</strong><small>POOL LEAGUE</small></span>
+      </a>
+      <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="mainNav">Menu ☰</button>
+      <nav id="mainNav" class="nav">
+        <a href="#table">League table</a><a href="#fixtures">Fixtures & results</a><a href="#teams">Teams</a><a href="#news">News</a><a href="#contact" class="nav-cta">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="live-dot"></span> LOCAL POOL • LOCAL PRIDE</p>
+          <h1>Every frame<br><em>counts.</em></h1>
+          <p class="hero-intro">Welcome to the Howden & District Pool League — your home for league standings, match fixtures, results and updates.</p>
+          <div class="hero-actions"><a class="button button-light" href="#table">View league table <span>↗</span></a><a class="text-link" href="#fixtures">Check fixtures <span>→</span></a></div>
+        </div>
+        <div class="hero-art" aria-label="Illustration of a pool table and eight ball" role="img">
+          <div class="table-illustration">
+            <div class="pocket p1"></div><div class="pocket p2"></div><div class="pocket p3"></div><div class="pocket p4"></div><div class="pocket p5"></div><div class="pocket p6"></div>
+            <div class="table-line"></div><div class="rack-ball ball-a">1</div><div class="rack-ball ball-b">3</div><div class="rack-ball ball-c">5</div><div class="rack-ball ball-d">8</div><div class="cue-ball"></div><div class="cue-stick"></div>
+          </div>
+          <div class="hero-caption"><span>EST. LOCAL COMPETITION</span><strong>One league. One community.</strong></div>
+        </div>
+      </div>
+      <div class="hero-bottom"><div class="wrap hero-bottom-inner"><span>COMPETE</span><span class="cross">✳</span><span>RESPECT</span><span class="cross">✳</span><span>ENJOY THE GAME</span></div></div>
+    </section>
+
+    <section class="quick-stats wrap" aria-label="League overview">
+      <div><span class="stat-icon">▤</span><span><strong>Fixtures</strong><small>Know your next match</small></span></div>
+      <div><span class="stat-icon">↗</span><span><strong>Results</strong><small>Follow every frame</small></span></div>
+      <div><span class="stat-icon">♜</span><span><strong>Standings</strong><small>Track the title race</small></span></div>
+      <div><span class="stat-icon">◎</span><span><strong>Community</strong><small>Local teams, local venues</small></span></div>
+    </section>
+
+    <section class="section wrap" id="table">
+      <div class="section-heading"><div><p class="eyebrow">THE SEASON SO FAR</p><h2>League table</h2></div><span class="pill">DEMO DATA</span></div>
+      <p class="section-note">Example standings are shown below to demonstrate the site. Replace them with your current league figures before publishing.</p>
+      <div class="table-tools"><label class="search-box"><span aria-hidden="true">⌕</span><input id="teamSearch" type="search" placeholder="Search teams…" aria-label="Search teams"></label><span id="teamCount" class="muted">8 teams</span></div>
+      <div class="table-scroll"><table id="leagueTable">
+        <thead><tr><th scope="col">Pos</th><th scope="col">Team</th><th scope="col">P</th><th scope="col">W</th><th scope="col">D</th><th scope="col">L</th><th scope="col">Frames +</th><th scope="col">Frames −</th><th scope="col">Diff</th><th scope="col">Pts</th></tr></thead>
+        <tbody>
+          <tr><td class="position">1</td><td class="team-name">The Railway</td><td>10</td><td>8</td><td>1</td><td>1</td><td>92</td><td>58</td><td class="positive">+34</td><td class="points">25</td></tr>
+          <tr><td class="position">2</td><td class="team-name">The Crown</td><td>10</td><td>7</td><td>2</td><td>1</td><td>86</td><td>64</td><td class="positive">+22</td><td class="points">23</td></tr>
+          <tr><td class="position">3</td><td class="team-name">Howden Club</td><td>10</td><td>6</td><td>1</td><td>3</td><td>81</td><td>69</td><td class="positive">+12</td><td class="points">19</td></tr>
+          <tr><td class="position">4</td><td class="team-name">The Black Horse</td><td>10</td><td>5</td><td>2</td><td>3</td><td>77</td><td>73</td><td class="positive">+4</td><td class="points">17</td></tr>
+          <tr><td class="position">5</td><td class="team-name">The Kings Head</td><td>10</td><td>4</td><td>2</td><td>4</td><td>72</td><td>78</td><td class="negative">−6</td><td class="points">14</td></tr>
+          <tr><td class="position">6</td><td class="team-name">The Ship Inn</td><td>10</td><td>3</td><td>2</td><td>5</td><td>68</td><td>82</td><td class="negative">−14</td><td class="points">11</td></tr>
+          <tr><td class="position">7</td><td class="team-name">The Fox</td><td>10</td><td>2</td><td>1</td><td>7</td><td>61</td><td>89</td><td class="negative">−28</td><td class="points">7</td></tr>
+          <tr><td class="position">8</td><td class="team-name">The White Hart</td><td>10</td><td>1</td><td>1</td><td>8</td><td>53</td><td>97</td><td class="negative">−44</td><td class="points">4</td></tr>
+        </tbody>
+      </table></div>
+      <p class="table-footnote">Demo scoring: 3 points for a win, 1 for a draw. Confirm the league's official rules and tie-break order.</p>
+    </section>
+
+    <section class="section section-tint" id="fixtures">
+      <div class="wrap">
+        <div class="section-heading"><div><p class="eyebrow">WHAT'S COMING UP</p><h2>Fixtures & results</h2></div><div class="switcher" role="group" aria-label="Choose fixtures or results"><button class="switch active" data-view="fixtures">Upcoming</button><button class="switch" data-view="results">Recent results</button></div></div>
+        <div id="matchCards" class="match-grid">
+          <article class="match-card"><div class="match-meta"><span>LEAGUE NIGHT</span><span>DEMO</span></div><div class="match-teams"><strong>The Railway</strong><span>VS</span><strong>The Crown</strong></div><div class="match-bottom"><span>Thursday · 7:30 pm</span><span class="venue">Home venue TBC</span></div></article>
+          <article class="match-card"><div class="match-meta"><span>LEAGUE NIGHT</span><span>DEMO</span></div><div class="match-teams"><strong>Howden Club</strong><span>VS</span><strong>The Black Horse</strong></div><div class="match-bottom"><span>Thursday · 7:30 pm</span><span class="venue">Home venue TBC</span></div></article>
+          <article class="match-card"><div class="match-meta"><span>LEAGUE NIGHT</span><span>DEMO</span></div><div class="match-teams"><strong>The Ship Inn</strong><span>VS</span><strong>The Fox</strong></div><div class="match-bottom"><span>Thursday · 7:30 pm</span><span class="venue">Home venue TBC</span></div></article>
+        </div>
+        <p class="section-note" id="matchNote">Sample fixtures only. Replace dates, teams and venues with confirmed details.</p>
+      </div>
+    </section>
+
+    <section class="section wrap" id="teams">
+      <div class="section-heading"><div><p class="eyebrow">MEET THE LEAGUE</p><h2>Teams & venues</h2></div></div>
+      <div class="team-grid">
+        <article class="team-card"><span class="team-badge">R</span><div><h3>The Railway</h3><p>Venue details to be added</p></div><span class="arrow">↗</span></article>
+        <article class="team-card"><span class="team-badge">C</span><div><h3>The Crown</h3><p>Venue details to be added</p></div><span class="arrow">↗</span></article>
+        <article class="team-card"><span class="team-badge">H</span><div><h3>Howden Club</h3><p>Venue details to be added</p></div><span class="arrow">↗</span></article>
+        <article class="team-card"><span class="team-badge">B</span><div><h3>The Black Horse</h3><p>Venue details to be added</p></div><span class="arrow">↗</span></article>
+      </div>
+      <p class="section-note">Team names and venues are placeholders, not verified league entries.</p>
+    </section>
+
+    <section class="news-section" id="news"><div class="wrap news-inner"><div><p class="eyebrow">FROM AROUND THE LEAGUE</p><h2>League news</h2><p>Announcements, cup draws, postponed matches and end-of-season updates will live here.</p></div><div class="news-callout"><span class="news-symbol">✳</span><div><strong>Got league news to share?</strong><p>Send match updates or announcements to the league organiser.</p><a href="#contact" class="text-link">Get in touch →</a></div></div></div></section>
+
+    <section class="section wrap contact-section" id="contact">
+      <div class="contact-copy"><p class="eyebrow">NEED TO GET IN TOUCH?</p><h2>Contact the league</h2><p>For fixtures, results, team registrations or general enquiries, contact the league organiser.</p><p class="muted">Add the official organiser's contact details before publishing.</p></div>
+      <div class="contact-card"><span class="contact-icon">✉</span><h3>League enquiries</h3><p>Email address not yet supplied.</p><button class="button button-dark" id="contactButton">Copy contact placeholder</button><p class="tiny" id="contactFeedback" aria-live="polite">Replace this button with the official email or phone number.</p></div>
+    </section>
+  </main>
+  <footer class="footer"><div class="wrap footer-top"><a class="brand brand-footer" href="#home"><span class="brand-mark">8</span><span><strong>HOWDEN & DISTRICT</strong><small>POOL LEAGUE</small></span></a><p>Good games. Good people. Great local pool.</p><a href="#home" class="back-top">Back to top ↑</a></div><div class="wrap footer-bottom"><span>© <span id="year"></span> Howden & District Pool League</span><span>Unofficial demo website — replace sample content before launch.</span></div></footer>
+  <script src="script.js"></script>
+</body>
+</html>
